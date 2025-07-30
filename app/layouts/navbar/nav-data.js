@@ -2,37 +2,37 @@ import config from '~/config.json';
 
 export const navLinks = [
   {
-    label: 'Projects',
-    pathname: '/#project-1',
+    label: 'About US',
+    pathname: '/#aboutus',
   },
-  {
-    label: 'Details',
-    pathname: '/#details',
-  },
-  {
-    label: 'Articles',
-    pathname: '/articles',
-  },
-  {
-    label: 'Contact',
-    pathname: '/contact',
-  },
+  // {
+  //   label: 'Portfolio',
+  //   pathname: '/#details',
+  // },
+  // {
+  //   label: 'Team',
+  //   pathname: '/articles',
+  // },
+  // {
+  //   label: 'Contact',
+  //   pathname: '/contact',
+  // },
 ];
 
 export const socialLinks = [
   {
-    label: 'Bluesky',
-    url: `https://bsky.app/profile/${config.bluesky}`,
-    icon: 'bluesky',
+    label: 'AwwAds',
+    url: `https://www.instagram.com/aww.ads?igsh=MXh1N2JuMzl6eHg0YQ==`,
+    icon: 'instagram',
   },
   {
-    label: 'Figma',
-    url: `https://www.figma.com/${config.figma}`,
-    icon: 'figma',
+    label: 'AwwShop',
+    url: `https://www.instagram.com/awwads.shop?igsh=eTFhcXNlaGk2Zmpw`,
+    icon: 'awwshop',
   },
-  {
-    label: 'Github',
-    url: `https://github.com/${config.github}`,
-    icon: 'github',
-  },
+  // {
+  //   label: 'Github',
+  //   url: `https://github.com/${config.github}`,
+  //   icon: 'github',
+  // },
 ];

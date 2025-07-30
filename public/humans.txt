@@ -1,39 +1,20 @@
-__  __  __
-\ \ \ \ \/
- \ \/\ \
-  \/  \/
+Aww Ads
 
 The humans.txt file explains the team, technology,
 and graphic assets behind this site humanstxt.org.
 
 _______________________________________________________________________________
 
-DESIGNER | デザイナー
+Founder
 
-Hamish Williams
-Hand crafted design & web development
-
-Design tools:
-Figma
-Photoshop
-Blender
-
-twitter.com/hamishmw
-github.com/hamishmw
+CvSuhail
+Software Engineer
 
 _______________________________________________________________________________
 
-TECHNOLOGY | テクノロジー
+CoFounder
 
-React
-Remix
-Three.js
-Framer Motion
+Adil Shan
+Creative Graphic Designer
 
 _______________________________________________________________________________
-
-FONTS | フォント
-
-Gotham
-IPA Gothic Regular
-Hiragino Kaku Gothic W8

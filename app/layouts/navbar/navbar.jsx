@@ -149,6 +149,7 @@ export const Navbar = () => {
         className={styles.logo}
         aria-label={`${config.name}, ${config.role}`}
         onClick={handleMobileNavClick}
+        style={{ marginLeft: isMobile ? '80px' : '110px' }} 
       >
         <Monogram highlight />
       </RouterLink>

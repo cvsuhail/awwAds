@@ -3,13 +3,12 @@ import gamestackTexture2Placeholder from '~/assets/gamestack-list-placeholder.jp
 import gamestackTexture2 from '~/assets/gamestack-list.jpg';
 import gamestackTextureLarge from '~/assets/gamestack-login-large.jpg';
 import gamestackTexturePlaceholder from '~/assets/gamestack-login-placeholder.jpg';
+import awwAds from '~/assets/awwads.png';
+import awwShop from '~/assets/awwshop.png';
 import gamestackTexture from '~/assets/gamestack-login.jpg';
 import sliceTextureLarge from '~/assets/slice-app-large.jpg';
 import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
 import sliceTexture from '~/assets/slice-app.jpg';
-import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
-import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from '~/assets/spr-lesson-builder-dark.jpg';
 import { Footer } from '~/components/footer';
 import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
@@ -41,8 +40,8 @@ export const links = () => {
 
 export const meta = () => {
   return baseMeta({
-    title: 'Designer + Developer',
-    description: `Design portfolio of ${config.name} — a product designer working on web & mobile apps with a focus on motion, experience design, and accessibility.`,
+    title: 'AwwAds',
+    description: `AwwAds is a creative branding agency that crafts impactful brand identities, digital assets, and advertising solutions tailored for modern businesses.`,
   });
 };
 
@@ -56,7 +55,9 @@ export const Home = () => {
   const details = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, details];
+    const sections = [intro, projectOne,
+      //  details
+      ];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -99,26 +100,30 @@ export const Home = () => {
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
       <ProjectSummary
-        id="project-1"
+        id="aboutus"
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
-        index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
-        buttonText="View project"
+        // index={1}
+        title="About Us"
+        description="AwwAds is a creative agency offering complete branding solutions and custom gifting. From logos to reels, and mugs to engraved frames — we help brands grow and moments get remembered."
+        buttonText="Know More"
         buttonLink="/projects/smart-sparrow"
         model={{
-          type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
+          type: 'phone',
+          alt: 'AwwAds Instagram handles',
           textures: [
             {
-              srcSet: `${sprTexture} 1280w, ${sprTextureLarge} 2560w`,
-              placeholder: sprTexturePlaceholder,
+              srcSet: `${awwShop} 375w, ${awwShop} 750w`,
+              placeholder: awwShop,
+            },
+            {
+              srcSet: `${awwAds} 1280w, ${awwAds} 2560w`,
+              placeholder: awwAds,
             },
           ],
         }}
       />
-      <ProjectSummary
+      {/* <ProjectSummary
         id="project-2"
         alternate
         sectionRef={projectTwo}
@@ -162,12 +167,12 @@ export const Home = () => {
             },
           ],
         }}
-      />
-      <Profile
+      /> */}
+      {/* <Profile
         sectionRef={details}
         visible={visibleSections.includes(details.current)}
         id="details"
-      />
+      /> */}
       <Footer />
     </div>
   );
