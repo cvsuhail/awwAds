@@ -14,9 +14,15 @@ import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
 import { Profile } from './profile';
 import { ProjectSummary } from './project-summary';
-import { useEffect, useRef, useState } from 'react';
+import { Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import config from '~/config.json';
 import styles from './home.module.css';
+import stylesSummary from './project-summary.module.css';
+import { Earth, EarthSection } from '../projects.smart-sparrow/earth';
+import { ProjectSection, ProjectSectionContent, ProjectSectionHeading, ProjectSectionText, ProjectTextRow } from '~/layouts/project';
+import { Heading } from '~/components/heading';
+import { Text } from '~/components/text';
+import { Button } from '~/components/button';
 
 // Prefetch draco decoader wasm
 export const links = () => {
@@ -57,7 +63,7 @@ export const Home = () => {
   useEffect(() => {
     const sections = [intro, projectOne,
       //  details
-      ];
+    ];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -104,8 +110,8 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         // index={1}
-        title="About Us"
-        description="AwwAds is a creative agency offering complete branding solutions and custom gifting. From logos to reels, and mugs to engraved frames — we help brands grow and moments get remembered."
+        title="🧡 About Us"
+        description="Awwads is a full-service creative studio delivering bold branding, smart marketing, and standout design. From logos to websites and ad campaigns, we help businesses tell their story. Our sister brand, Awwshop, brings that story to life with custom gifts and laser-engraved merch."
         buttonText="Know More"
         buttonLink="/projects/smart-sparrow"
         model={{
