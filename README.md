@@ -1,7 +1,7 @@
 <p align="center">
   <img src="/public/favicon.svg" width="50" alt="Logo" />
 </p>
-<h1 align="center">Personal portfolio</h1>
+<h1 align="center">Aww Ads</h1>
 
 [![Site preview](<img width="1512" height="855" alt="image" src="https://github.com/user-attachments/assets/cbde3501-7f73-4825-bca4-5330af5cd8ae" />
 )](https://awwads.in)
